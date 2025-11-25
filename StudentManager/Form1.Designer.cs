@@ -105,6 +105,7 @@
             this.board.RowTemplate.Height = 24;
             this.board.Size = new System.Drawing.Size(393, 335);
             this.board.TabIndex = 7;
+            this.board.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.board_CellClick);
             // 
             // add
             // 
