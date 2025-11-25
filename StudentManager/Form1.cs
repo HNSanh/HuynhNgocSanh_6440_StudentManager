@@ -10,8 +10,16 @@ using System.Windows.Forms;
 
 namespace StudentManager
 {
+    
     public partial class Form1 : Form
     {
+        List<Student> students = new List<Student>();
+        public class Student
+        {
+            public string Name { get; set; }
+            public string Gender { get; set; }
+            public string Class { get; set; }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +31,11 @@ namespace StudentManager
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_Click(object sender, EventArgs e)
         {
 
         }
