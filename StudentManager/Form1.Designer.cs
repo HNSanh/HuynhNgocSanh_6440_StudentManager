@@ -62,27 +62,27 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Họ và tên";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(43, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label2.Text = "Giới tính";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(43, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.Size = new System.Drawing.Size(30, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.label3.Text = "Lớp";
             // 
             // gender
             // 
@@ -132,7 +132,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(75, 58);
             this.update.TabIndex = 10;
-            this.update.Text = "Cap Nhat";
+            this.update.Text = "Cap nhat";
             this.update.UseVisualStyleBackColor = true;
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
@@ -144,6 +144,7 @@
             this.search.TabIndex = 11;
             this.search.Text = "Tim kiem";
             this.search.UseVisualStyleBackColor = true;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // Form1
             // 
@@ -162,7 +163,7 @@
             this.Controls.Add(this.txtlop);
             this.Controls.Add(this.txtname);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "StudentManager";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.board)).EndInit();
             this.ResumeLayout(false);
