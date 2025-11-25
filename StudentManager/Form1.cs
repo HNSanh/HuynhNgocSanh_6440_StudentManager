@@ -37,7 +37,71 @@ namespace StudentManager
 
         private void add_Click(object sender, EventArgs e)
         {
+            string name = txtname.Text.Trim();
 
+            // --- KIỂM TRA LỖI HỌ TÊN ---
+            // 1. Không được chứa số
+            if (name.Any(char.IsDigit))
+            {
+                MessageBox.Show("Họ tên không được chứa số!", "Lỗi nhập liệu",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                ClearInput();
+                return;
+            }
+
+            // 2. Không được vượt quá 30 ký tự
+            if (name.Length > 30)
+            {
+                MessageBox.Show("Họ tên không được dài quá 30 ký tự!", "Lỗi nhập liệu",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                ClearInput();
+                return;
+            }
+
+            // Nếu hợp lệ → tạo đối tượng Student
+            Student s = new Student()
+            {
+                Name = name,
+                Gender = gender.Text,
+                Class = txtlop.Text
+            };
+
+            students.Add(s);
+
+            // Cập nhật bảng
+            board.DataSource = null;
+            board.DataSource = students;
+        }
+        private void ClearInput()
+        {
+            txtname.Text = "";
+            gender.Text = "";
+            txtlop.Text = "";
+            txtname.Focus(); // focus lại vào tên
+        }
+
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            string keyword = txtname.Text.ToLower();
+            var result = students.FindAll(s => s.Name.ToLower().Contains(keyword));
+            board.DataSource = null;
+            board.DataSource = result;
+        }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            if (board.CurrentRow != null)
+            {
+                int index = board.CurrentRow.Index;
+                students[index].Name = txtname.Text;
+                students[index].Gender = gender.Text;
+                students[index].Class = txtlop.Text;
+                board.DataSource = null;
+                board.DataSource = students;
+            }
         }
     }
 }

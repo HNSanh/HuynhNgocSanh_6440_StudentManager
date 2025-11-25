@@ -124,6 +124,7 @@
             this.delete.TabIndex = 9;
             this.delete.Text = "Xoá";
             this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // update
             // 
@@ -133,6 +134,7 @@
             this.update.TabIndex = 10;
             this.update.Text = "Cap Nhat";
             this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // search
             // 
