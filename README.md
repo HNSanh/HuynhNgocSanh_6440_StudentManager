@@ -1,4 +1,4 @@
-# Hồ Quang Đông_3303_StudentManager
+# Huỳnh Ngọc Sanh_6440_StudentManager
 
 ## 1. Mô tả dự án (Project Description)
 Đây là dự án phần mềm **Quản lý Sinh viên (Student Manager)** được phát triển nhằm mục đích thực hành quy trình quản lý mã nguồn chuyên nghiệp với Git và GitHub.
@@ -14,7 +14,7 @@ Dự án bao gồm các chức năng cơ bản:
 Để chạy dự án này trên máy cục bộ, hãy làm theo các bước sau:
 
 1.  **Clone repository về máy:**
-    git clone https://github.com/rumvn84/HOQUANGDONG_3303_StudentManager.git
+    git clone 
     hoặc có thể mở VS chọn Clone a reposiotry và dán link trên vào và mở .
     ```
 2.  **Mở dự án:**
@@ -33,19 +33,6 @@ Dự án bao gồm các chức năng cơ bản:
 ## 4. Pull Request (PR)
 Chức năng mới (Validation) đã được phát triển trên nhánh `feature/intro` và merge vào `main` thông qua Pull Request:
 
-- **Link PR:** https://github.com/rumvn84/HOQUANGDONG_3303_StudentManager/pull/1
+- **Link PR:** https://github.com/HNSanh/HuynhNgocSanh_6440_StudentManager/pull/1
 - **Trạng thái:** Đã Merge .
 
-## 5. Ảnh UI
-Giao diện ứng dụng (UI) : QuanLySinhVien(GIT)\UI.png
-
-## 6. Log hoặc link log
-* (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from feature/intro
-|\
-| * (origin/feature/intro) Validation: prevent empty student name
-|/
-* Feature: add search function
-* Feature: implement add/update/delete
-* Model: add Student class
-* UI: add main form layout and controls
-* Initial commit: StudentManager project
